@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/categories_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -10,9 +11,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DeliMeals'),
+        title: const Text('DeliMeals'),
       ),
-      body: Center(child: Text('Navigation Time'),),
+      body: CategoriesScreen(),
     );
   }
 }
