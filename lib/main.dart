@@ -33,6 +33,13 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
       },
+      onGenerateRoute: (settings){
+        // dynamic routs will be there;
+      },
+      onUnknownRoute: (settings){
+        // show 404 error page
+        return MaterialPageRoute(builder: (ctx) => MyHomePage());
+      },
     );
   }
 }
